@@ -2,18 +2,13 @@
 
 declare(strict_types=1);
 
-/**
- * Абстрактный класс Animal.
- */
+
 abstract class Animal
 {
-    /** @var string */
     protected $name;
 
-    /** @var string */
     protected $species;
 
-    /** @var int */
     private $age;
 
     public function __construct(string $name, int $age, string $species)
@@ -58,12 +53,8 @@ abstract class Animal
     }
 }
 
-/**
- * Класс Cat.
- */
 class Cat extends Animal
 {
-    /** @var string */
     private $color;
 
     public function __construct(string $name, int $age, string $color)
@@ -89,6 +80,5 @@ class Cat extends Animal
     }
 }
 
-// Демонстрация
 $cat = new Cat('Мурка', 2, 'серая');
 $cat->makeSound();

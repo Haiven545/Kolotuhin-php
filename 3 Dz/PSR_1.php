@@ -75,6 +75,5 @@ class Cat extends Animal
     }
 }
 
-// Демонстрация
 $cat = new Cat("Мурка", 2, "серая");
 $cat->makeSound();
